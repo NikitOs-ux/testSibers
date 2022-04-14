@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>test</title>
+    <script src="https://kit.fontawesome.com/95bd7eb798.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="modal">
+        <div class="modal-background">
+            <div class="modal-body">
+                <div class="modal-content">
+                    <div class="content-wrapper">
+                        <div class="content-text">
+                            <div class="text-title">Свободная путевка</div>
+                            <div class="text-discription">Укажите дату, продолжительность и кол-во гостей, мы подберем оптимальную
+ путевку в этом или аналогичном санатории</div>
+                        </div>
+
+                        <!-- блок с информаций о поездке -->
+                        <div class="information-trip">
+                            <div class="info-date">
+                                <div class="info-date-item">
+                                    <label for="select-date">Дата заезда</label>
+                                    <input type="date" name="select-date" id="">
+                                </div>
+                                <div class="info-date-item">
+                                    <label for="count-days">Продолжительность</label>   
+                                    <select name="count-days" id="">
+                                        <option value="1">1 день</option>
+                                        <option value="2">2 дня</option>
+                                        <option value="3">3 дня</option>
+                                        <option value="7">7 дней</option>
+                                    </select>
+                                </div>
+                            </div>
+
+
+                            <div class="info-travelers">
+                                <div class="people-ico">
+                                    <!-- <i class="fa-solid fa-person"></i> -->
+                                    <img src="/img/Group.png" alt="">
+                                </div>
+                                <div class="info-travelers-item">
+                                <label for="old-persons">Сколько взрослых?</label>   
+                                    <select name="old-persons" id="">
+                                        <option value="1">1 взрослый</option>
+                                        <option value="2" selected>2 взрослых</option>
+                                        <option value="3">3 взрослых</option>
+                                        <option value="7">7 взрослых</option>
+                                    </select>
+                                </div>
+                                <div class="info-travelers-item">
+                                <label for="children">Сколько детей?</label>   
+                                <input type="number" name="childrem" id="" value="0">
+                            </div>
+                            </div>
+                        </div>
+                        <!-- контактная информация -->
+                        <div class="contact-information">
+                            <div class="contact-item">
+                                <input type="number" name="" id="phone" placeholder="+7 (___) ___-__-__">
+                            </div>
+                            <div class="contact-item contact-item__FIO">
+                                <input type="text" placeholder="ФИО">
+                            </div>
+                        </div>
+                        
+                        <!-- блок с дополнительными параметрами и отправкой данных -->
+                        <div class="other-setting">
+                            <div class="setting-wrapper">
+                                <div class="checkbox-wrapper">
+                                    <div class="checkbox-item">
+                                        <div class="checkbox">
+                                            <input type="checkbox" name="other-sanatories" id="other-sanatories">
+                                        </div>
+                                        <div class="checkbox-discription">
+                                            <label for="other-sanatories">Рассмотрю другие санатории</label>
+                                        </div>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <div class="checkbox">
+                                            <input type="checkbox" name="mailing" id="mailing">
+                                        </div>
+                                        <div class="checkbox-discription">
+                                            <label for="mailing">Согласен получать информацию о новостях и скидках</label>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="submit-wrapper">
+                                    <input type="submit" value="Найти">
+                                    <div class="warning">
+                                        Нажимая «Найти», вы даёте согласие на обработку персональных данных в соответствии с <a href="#">политикой конфиденциальности</a>
+                                    </div>
+                                </div>
+                        </div>
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- <button class="open-modal">Open modal</button> -->
+    <script src="scripts/script.js"></script>
+</body>
+</html>
